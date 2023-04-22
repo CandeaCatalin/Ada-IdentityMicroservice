@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace IdentityMicroservice.DI
 {
-    public static class DependencyInjection
+    public static class DependencyResolver
     {
         public static IServiceCollection AddDependencies(this IServiceCollection services)
         {

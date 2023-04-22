@@ -22,7 +22,6 @@ public class IdentityController : ControllerBase
             var generatedToken = await _userBusinessLogic.Login(loginDto);
             return Ok(new {Token = generatedToken});
     }
-
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterDto registerDto)
     {
