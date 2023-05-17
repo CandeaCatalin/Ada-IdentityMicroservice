@@ -37,7 +37,11 @@ namespace IdentityMicroservice.Repository
                 EmailConfirmed = true,
                 UserName = registerDto.Email
             };
-            await _userManager.CreateAsync(newUser, registerDto.Password);
+            var addResult = await _userManager.CreateAsync(newUser, registerDto.Password);
+            if (addResult.Errors.Count() != 0)
+            {
+                throw new Exception($"Account already exists!");
+            }
             if (registerDto.IsAdmin)
                 await _userManager.AddToRoleAsync(newUser, "Admin");
             return true;

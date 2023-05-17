@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityMicroservice.DataAc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityMicroservice.Services", "IdentityMicroservice.Services\IdentityMicroservice.Services.csproj", "{011CE32E-4168-4E2E-8E0D-0C060CF7FFF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityMicroservice.DI", "IdentityMicroservice.DI\IdentityMicroservice.DI.csproj", "{3C155E25-4CC7-41B0-AE9B-93D94D518F5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityMicroservice.DI", "IdentityMicroservice.DI\IdentityMicroservice.DI.csproj", "{3C155E25-4CC7-41B0-AE9B-93D94D518F5D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{97E82AF4-CB88-4ED0-9E85-C854E60A49A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{3C155E25-4CC7-41B0-AE9B-93D94D518F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C155E25-4CC7-41B0-AE9B-93D94D518F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C155E25-4CC7-41B0-AE9B-93D94D518F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E82AF4-CB88-4ED0-9E85-C854E60A49A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E82AF4-CB88-4ED0-9E85-C854E60A49A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E82AF4-CB88-4ED0-9E85-C854E60A49A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E82AF4-CB88-4ED0-9E85-C854E60A49A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

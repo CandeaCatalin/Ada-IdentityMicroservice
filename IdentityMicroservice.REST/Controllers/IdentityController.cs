@@ -31,7 +31,7 @@ public class IdentityController : ControllerBase
     
 
     [HttpGet("checkSession")]
-    [Authorize(Roles="Admin")]
+    [Authorize]
     public IActionResult CheckSession()
     {
         return Ok();
